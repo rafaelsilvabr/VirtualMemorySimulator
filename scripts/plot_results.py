@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
 import platform
 import cpuinfo
 import psutil
@@ -18,10 +17,7 @@ def get_system_info():
         'Python': platform.python_version()
     }
 
-def plot_results():
-    # Configuração do estilo
-    plt.style.use('seaborn')
-    
+def plot_results():    
     # Leitura dos dados
     df = pd.read_csv('resultados.csv')
     

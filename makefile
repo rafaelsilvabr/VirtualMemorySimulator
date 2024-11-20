@@ -42,7 +42,7 @@ python_deps:
 		echo "Pip3 não está instalado. Por favor, instale-o primeiro."; \
 		exit 1; \
 	fi
-	pip3 install matplotlib pandas seaborn py-cpuinfo psutil
+	pip3 install matplotlib pandas py-cpuinfo psutil
 
 # Compilar o programa
 $(TARGET): $(OBJECTS)
