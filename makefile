@@ -59,7 +59,7 @@ clean:
 
 # Executar testes
 test: clean $(BUILD_DIR)
-	$(CC) $(CFLAGS) $(SRC_DIR)/page.c $(SRC_DIR)/algorithms.c $(TEST_DIR)/test.c -o test
+	$(CC) $(CFLAGS) $(SRC_DIR)/page.c $(SRC_DIR)/algorithms.c $(TEST_DIR)/test.c -o test -lm
 	./test
 
 # Executar o programa e gerar gráfico
