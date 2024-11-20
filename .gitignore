@@ -1,0 +1,23 @@
+# Arquivos objeto
+*.o
+
+# Executáveis
+simulador
+*.exe
+
+# Arquivos temporários
+*.tmp
+
+# Arquivos de IDE
+.vscode/
+.idea/
+
+# Arquivos de resultado
+*.csv
+*.dat
+
+# Build directory
+build/
+
+# Arquivos de sistema
+.DS_Store

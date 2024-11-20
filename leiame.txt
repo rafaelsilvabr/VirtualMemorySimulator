@@ -1,0 +1,66 @@
+SIMULADOR DE MEMÓRIA VIRTUAL
+===========================
+
+Este arquivo contém instruções básicas para compilação e execução do simulador
+de memória virtual que implementa três algoritmos de substituição de páginas:
+FIFO, Segunda Chance e Relógio.
+
+1. REQUISITOS
+------------
+- GCC (GNU Compiler Collection)
+- GNU Make
+- Python 3.x
+- Bibliotecas Python necessárias
+
+2. INSTALAÇÃO
+------------
+Para instalar as dependências Python necessárias:
+$ pip3 install matplotlib pandas seaborn py-cpuinfo psutil
+
+3. COMPILAÇÃO
+------------
+Para compilar o simulador:
+$ make
+
+4. EXECUÇÃO
+-----------
+Para executar a simulação e gerar os gráficos:
+$ make run
+
+5. TESTES
+---------
+Para executar os testes unitários:
+$ make test
+
+6. LIMPEZA
+----------
+Para limpar os arquivos gerados:
+$ make clean
+
+7. ARQUIVOS GERADOS
+------------------
+- resultados.csv: Contém os dados numéricos da simulação
+- docs/resultados/graficos/comparacao_algoritmos.png: Gráfico comparativo
+
+8. ESTRUTURA DE DIRETÓRIOS
+-------------------------
+src/        : Código fonte do simulador
+tests/      : Testes unitários
+scripts/    : Scripts para geração de gráficos
+docs/       : Documentação e resultados
+build/      : Arquivos objeto gerados na compilação
+
+9. CONFIGURAÇÕES DA SIMULAÇÃO
+---------------------------
+- Número de quadros: 10 a 100 (incremento de 10)
+- Referências por experimento: 1.000
+- Número de experimentos: 5
+- Espaço de endereçamento: 200 páginas
+- Range de referências: 1 a 200
+
+10. OBSERVAÇÕES
+-------------
+- O simulador utiliza alocação global de quadros
+- O programa é iniciado sem nenhuma página (paginação sob demanda)
+- A primeira referência sempre levará a uma falta de página
+- Não há distinção entre páginas apenas lidas e páginas escritas
