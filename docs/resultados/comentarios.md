@@ -4,7 +4,7 @@
 
 O gráfico a seguir apresenta os resultados da comparação entre três algoritmos de substituição de páginas: FIFO (First-In-First-Out), Segunda Chance e Relógio.
 
-![Gráfico de Comparação de Algoritmos](grafico.jpg)
+![Gráfico de Comparação de Algoritmos](comparacao_algoritmos.png)
 
 Sistema: 
 - Linux 5.15.167.4-microsoft-standard-WSL2

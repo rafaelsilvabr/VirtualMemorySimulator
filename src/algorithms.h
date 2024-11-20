@@ -25,6 +25,8 @@ int clock_replace(Page* frames, int num_frames, int page_number, int current_tim
 int find_page(Page* frames, int num_frames, int page_number);
 
 // Função principal de simulação
-Statistics simulate_memory(Algorithm alg, int num_frames, int num_references);
+Statistics simulate_memory(Algorithm alg, int num_frames, int num_references, double zipf_s);
+
+int generate_zipf_page_number(double s);
 
 #endif

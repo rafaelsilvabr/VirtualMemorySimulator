@@ -46,7 +46,7 @@ python_deps:
 
 # Compilar o programa
 $(TARGET): $(OBJECTS)
-	$(CC) $(OBJECTS) -o $(TARGET)
+	$(CC) $(OBJECTS) -o $(TARGET) -lm
 
 # Compilar os objetos
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
