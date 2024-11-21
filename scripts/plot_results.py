@@ -13,8 +13,7 @@ def get_system_info():
     return {
         'OS': platform.system() + ' ' + platform.release(),
         'CPU': cpu,
-        'RAM': f"{psutil.virtual_memory().total / (1024**3):.1f} GB",
-        'Python': platform.python_version()
+        'RAM': f"{psutil.virtual_memory().total / (1024**3):.1f} GB"
     }
 
 def plot_results():    
@@ -43,7 +42,6 @@ def plot_results():
     info_text = f"Sistema: {sys_info['OS']}\n"
     info_text += f"CPU: {sys_info['CPU']}\n"
     info_text += f"RAM: {sys_info['RAM']}\n"
-    info_text += f"Python: {sys_info['Python']}"
     
     plt.figtext(0.02, 0.02, info_text, fontsize=8, ha='left')
     
